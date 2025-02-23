@@ -18,4 +18,12 @@ public class ThoiGianBaoHanh {
     @Column(name = "id")
     private Integer id;
 
+    @Column(name = "ma")
+    private String ma;
+
+    @Column(name = "thoi_gian")
+    private String thoiGian;
+
+    @Column(name = "trang_thai")
+    private Integer trangThai;
 }

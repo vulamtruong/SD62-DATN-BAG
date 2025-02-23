@@ -1,16 +1,15 @@
 package com.example.demo.entity;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "thuong_hieu")
+@Table(name = "mau_sac")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ThuongHieu {
+public class MauSac {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -21,7 +20,4 @@ public class ThuongHieu {
 
     @Column(name = "ten")
     private String ten;
-
-    @Column(name = "trang_thai")
-    private Integer trangThai;
 }
